@@ -1,7 +1,7 @@
 FROM kalilinux/kali-bleeding-edge
 
 RUN apt update &&\
-    apt install git python-pip python-pip3 -y
+    apt install git python-pip python3-pip -y
 
 RUN git clone https://github.com/smicallef/spiderfoot
 RUN pip3 install -r /spiderfoot/requirements.txt
